@@ -55,11 +55,6 @@ app.engine('html', (_, options, callback) => {
 app.set('view engine', 'html');
 app.set('views', DIST_FOLDER);
 
-// TODO: implement data requests securely
-app.get('/api/*', (req, res) => {
-    res.status(404).send('data requests are not supported');
-});
-
 // Server static files from dist folder
 app.get('*.*', express.static(DIST_FOLDER));
 

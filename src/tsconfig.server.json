@@ -3,14 +3,9 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app-server",
     "baseUrl": ".",
-    "module": "commonjs",
-    "types": []
+    "module": "commonjs"
   },
-  "exclude": [
-    "test.ts",
-    "**/*.spec.ts"
-  ],
-"angularCompilerOptions": {
-  "entryModule": "app/app.server.module#AppServerModule"
-}
+  "angularCompilerOptions": {
+    "entryModule": "app/app.server.module#AppServerModule"
+  }
 }

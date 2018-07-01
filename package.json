@@ -1,6 +1,6 @@
 {
   "name": "eyunes",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -28,6 +28,7 @@
     "@angular/router": "^6.0.3",
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+    "@ngx-translate/core": "^10.0.2",
     "angular-particle": "^1.0.4",
     "chart.js": "2.5.x",
     "classlist.js": "1.1.x",
@@ -38,12 +39,12 @@
     "hammerjs": "2.0.x",
     "jarallax": "^1.10.3",
     "ng-html-util": "1.0.x",
-    "ng-uikit-pro-standard": "git+https://oauth2:Cdss-U8smxuebQ1f6rXE@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git",
+    "ng-uikit-pro-standard": "git+https://oauth2:LzsJmQWvCXnL5Tct13fJ@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git#dev",
     "rxjs": "^6.0.0",
     "screenfull": "3.3.x",
     "smoothscroll-polyfill": "0.3.x",
     "ts-loader": "^4.0.0",
-    "web-animations-js": "2.3.x",
+    "web-animations-js": "^2.3.1",
     "webpack-node-externals": "^1.7.2",
     "zone.js": "^0.8.26"
   },
