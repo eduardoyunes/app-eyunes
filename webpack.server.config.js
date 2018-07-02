@@ -19,7 +19,8 @@ module.exports = {
   externals: [/node_modules/, nodeExternals({
     whitelist: [
       /^@agm\/core/,
-      /^hammerjs/
+      /^hammerjs/,
+      /^angular-particle/,
     ]
   })],
   output: {
@@ -56,3 +57,4 @@ module.exports = {
     )
   ]
 };
+

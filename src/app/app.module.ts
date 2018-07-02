@@ -1,36 +1,36 @@
+
+// import { AgmCoreModule } from '@agm/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule } from 'ng-uikit-pro-standard';
 import { RouterModule } from '@angular/router';
+
 import { AppComponent } from './app.component';
-import { AboutComponent } from './lazy/about/about.component';
-import { CurriculoComponent } from './lazy/curriculo/curriculo.component';
-import { ContactComponent } from './lazy/contact/contact.component';
-import { CtaComponent } from './lazy/cta/cta.component';
-import { FeaturesComponent } from './lazy/features/features.component';
-import { NavModule } from './layout/nav/nav.module';
+import { LayoutModule } from './layout/mainlayout.module';
+import { ErrorsModule } from './sections/errors/errors.module';
+import { SectionsModule } from './sections/sections.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AboutComponent,
-    FeaturesComponent,
-    CurriculoComponent,
-    CtaComponent,
-    ContactComponent
+    AppComponent
   ],
   imports: [
+    // AgmCoreModule.forRoot({
+     //  apiKey: ''
+    // }),
     BrowserModule.withServerTransition({ appId: 'eyunes' }),
     BrowserAnimationsModule,
-    NavModule,
     FormsModule,
-    HttpModule,
+    LayoutModule,
+    ErrorsModule,
+    SectionsModule,
+    ReactiveFormsModule,
     RouterModule,
     ToastModule.forRoot(),
     MDBBootstrapModulesPro.forRoot()
+    // acho que nao precisa ficar aqui
   ],
   providers: [MDBSpinningPreloader],
   bootstrap: [AppComponent],
